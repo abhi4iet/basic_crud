@@ -31,4 +31,8 @@ export const Counter = () => {
     )
 }
 
-// cleanuup function will get called just before the useEffect callback except for the first time
+// cleanup function will get called just before the useEffect callback except for the first time
+// cleanup function will get called at the time of unmounting of component
+
+// useEffect will get called when the component mounts for the first time + when dependencies (state / new props) in the dependency array changes.
+// useEffect without dependency array run after every rerender
